@@ -1,0 +1,909 @@
+2024-09-25 19:25:52.289 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-09-25 19:25:52.336 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 19:25:52.344 -03:00 [INF] Creating key {69ab66c4-3984-47cd-8c2c-992b42c54290} with creation date 2024-09-25 22:25:52Z, activation date 2024-09-25 22:25:52Z, and expiration date 2024-12-24 22:25:52Z.
+2024-09-25 19:25:52.353 -03:00 [INF] Writing data to file 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys\key-69ab66c4-3984-47cd-8c2c-992b42c54290.xml'.
+2024-09-25 19:25:52.483 -03:00 [INF] Now listening on: http://localhost:6200
+2024-09-25 19:25:52.484 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 19:25:52.484 -03:00 [INF] Hosting environment: Development
+2024-09-25 19:25:52.484 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 19:25:53.516 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:6200/index.html - null null
+2024-09-25 19:26:44.383 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-09-25 19:26:44.421 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 19:26:44.510 -03:00 [INF] Now listening on: http://localhost:9500
+2024-09-25 19:26:44.511 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 19:26:44.511 -03:00 [INF] Hosting environment: Development
+2024-09-25 19:26:44.511 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 19:26:44.989 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/index.html - null null
+2024-09-25 19:27:00.302 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI\bin\Debug\net8.0\ProvaLPI.xml'.
+File name: 'C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI\bin\Debug\net8.0\ProvaLPI.xml'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass32_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at Program.<>c.<<Main>$>b__0_3(SwaggerGenOptions c) in C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI\Program.cs:line 185
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method2(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 19:27:00.395 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/index.html - 500 null text/html; charset=utf-8 15410.0833ms
+2024-09-25 19:27:00.401 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_vs/browserLink - null null
+2024-09-25 19:27:00.404 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 19:27:00.410 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 5.9195ms
+2024-09-25 19:27:00.449 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.5892ms
+2024-09-25 19:27:00.501 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/favicon.ico - null null
+2024-09-25 19:30:43.302 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI\bin\Debug\net8.0\ProvaLPI.xml'.
+File name: 'C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI\bin\Debug\net8.0\ProvaLPI.xml'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass32_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at Program.<>c.<<Main>$>b__0_3(SwaggerGenOptions c) in C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI\Program.cs:line 185
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at InvokeStub_ConfigureSwaggerGeneratorOptions..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method2(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 19:30:43.315 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/favicon.ico - 500 null text/plain; charset=utf-8 222814.7249ms
+2024-09-25 19:30:50.052 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-09-25 19:30:50.089 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 19:30:50.185 -03:00 [INF] Now listening on: http://localhost:9500
+2024-09-25 19:30:50.186 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 19:30:50.186 -03:00 [INF] Hosting environment: Development
+2024-09-25 19:30:50.186 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 19:30:50.677 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/index.html - null null
+2024-09-25 19:30:50.849 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/index.html - 200 null text/html;charset=utf-8 176.2065ms
+2024-09-25 19:30:50.850 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/swagger-ui-bundle.js - null null
+2024-09-25 19:30:50.850 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/swagger-ui-standalone-preset.js - null null
+2024-09-25 19:30:50.850 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 19:30:50.851 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/swagger-ui.css - null null
+2024-09-25 19:30:50.856 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_vs/browserLink - null null
+2024-09-25 19:30:50.859 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 8.4722ms
+2024-09-25 19:30:50.899 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-25 19:30:50.899 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-09-25 19:30:50.901 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/swagger-ui.css - 200 143943 text/css 50.1601ms
+2024-09-25 19:30:50.901 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/swagger-ui-standalone-preset.js - 200 339486 text/javascript 50.9998ms
+2024-09-25 19:30:50.906 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-09-25 19:30:50.906 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/swagger-ui-bundle.js - 200 1096145 text/javascript 57.5199ms
+2024-09-25 19:30:50.908 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.5707ms
+2024-09-25 19:30:51.019 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - null null
+2024-09-25 19:30:51.034 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/favicon-32x32.png - null null
+2024-09-25 19:30:51.034 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-09-25 19:30:51.034 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/favicon-32x32.png - 200 628 image/png 0.6349ms
+2024-09-25 19:30:51.040 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.4086ms
+2024-09-25 20:01:29.142 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 20:01:29.258 -03:00 [INF] Now listening on: http://localhost:9500
+2024-09-25 20:01:29.259 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 20:01:29.259 -03:00 [INF] Hosting environment: Development
+2024-09-25 20:01:29.259 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 20:01:29.832 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/index.html - null null
+2024-09-25 20:01:29.994 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/index.html - 200 null text/html;charset=utf-8 165.236ms
+2024-09-25 20:01:29.999 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 20:01:29.999 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_vs/browserLink - null null
+2024-09-25 20:01:30.004 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 8.0855ms
+2024-09-25 20:01:30.027 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.1472ms
+2024-09-25 20:01:30.136 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - null null
+2024-09-25 20:01:30.210 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.0162ms
+2024-09-25 20:01:50.257 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:9500/api/Usuarios - application/json 98
+2024-09-25 20:01:50.264 -03:00 [WRN] Failed to determine the https port for redirect.
+2024-09-25 20:01:50.270 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-09-25 20:01:50.272 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-09-25 20:01:50.273 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:9500/api/Usuarios - 401 0 null 16.108ms
+2024-09-25 20:02:06.243 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:9500/api/Usuarios - application/json 98
+2024-09-25 20:02:06.275 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:02:06.290 -03:00 [INF] Route matched with {action = "CadastrarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CadastrarUsuario(ProvaLPI.ViewModel.UsuarioViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 20:02:07.032 -03:00 [ERR] Erro ao verificar email de usuario: Andre Menegassi, andre@gmail.com
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com' at line 2
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at ProvaLPI.Service.UsuarioService.Cadastrar(UsuarioViewModel request) in C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI\Service\UsuarioService.cs:line 77
+2024-09-25 20:02:07.059 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-25 20:02:07.061 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI) in 769.1112ms
+2024-09-25 20:02:07.061 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:02:07.062 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:9500/api/Usuarios - 500 null text/plain; charset=utf-8 818.3789ms
+2024-09-25 20:02:37.130 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/index.html - null null
+2024-09-25 20:02:37.136 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/index.html - 200 null text/html;charset=utf-8 6.0729ms
+2024-09-25 20:02:37.143 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 20:02:37.143 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 0.4798ms
+2024-09-25 20:02:37.143 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_vs/browserLink - null null
+2024-09-25 20:02:37.163 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.1451ms
+2024-09-25 20:02:37.224 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - null null
+2024-09-25 20:02:37.228 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.9191ms
+2024-09-25 20:02:54.058 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:9500/api/Usuarios - application/json 86
+2024-09-25 20:02:54.059 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:02:54.060 -03:00 [INF] Route matched with {action = "CadastrarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CadastrarUsuario(ProvaLPI.ViewModel.UsuarioViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 20:02:54.113 -03:00 [ERR] Erro ao verificar email de usuario: string, string
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'string' in 'where clause'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at ProvaLPI.Service.UsuarioService.Cadastrar(UsuarioViewModel request) in C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI\Service\UsuarioService.cs:line 77
+2024-09-25 20:02:54.126 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-25 20:02:54.126 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI) in 66.1702ms
+2024-09-25 20:02:54.126 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:02:54.126 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:9500/api/Usuarios - 500 null text/plain; charset=utf-8 68.293ms
+2024-09-25 20:03:33.572 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 20:03:33.696 -03:00 [INF] Now listening on: http://localhost:9500
+2024-09-25 20:03:33.697 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 20:03:33.697 -03:00 [INF] Hosting environment: Development
+2024-09-25 20:03:33.697 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 20:03:33.944 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/index.html - null null
+2024-09-25 20:03:34.099 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 20:03:34.099 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_vs/browserLink - null null
+2024-09-25 20:03:34.101 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/index.html - 200 null text/html;charset=utf-8 160.4484ms
+2024-09-25 20:03:34.102 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 3.5831ms
+2024-09-25 20:03:34.124 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.9503ms
+2024-09-25 20:03:34.159 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - null null
+2024-09-25 20:03:34.225 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.3753ms
+2024-09-25 20:03:42.821 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:9500/api/Usuarios - application/json 86
+2024-09-25 20:03:42.862 -03:00 [WRN] Failed to determine the https port for redirect.
+2024-09-25 20:03:42.868 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:03:42.886 -03:00 [INF] Route matched with {action = "CadastrarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CadastrarUsuario(ProvaLPI.ViewModel.UsuarioViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 20:03:50.049 -03:00 [ERR] Erro ao verificar email de usuario: string, string
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'string' in 'where clause'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at ProvaLPI.Service.UsuarioService.Cadastrar(UsuarioViewModel request) in C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI\Service\UsuarioService.cs:line 77
+2024-09-25 20:03:50.067 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-25 20:03:50.068 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI) in 7180.4848ms
+2024-09-25 20:03:50.069 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:03:50.069 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:9500/api/Usuarios - 500 null text/plain; charset=utf-8 7247.5279ms
+2024-09-25 20:05:12.929 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 20:05:13.113 -03:00 [INF] Now listening on: http://localhost:9500
+2024-09-25 20:05:13.114 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 20:05:13.114 -03:00 [INF] Hosting environment: Development
+2024-09-25 20:05:13.114 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 20:05:13.253 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/index.html - null null
+2024-09-25 20:05:13.404 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/index.html - 200 null text/html;charset=utf-8 154.0934ms
+2024-09-25 20:05:13.405 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 20:05:13.405 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_vs/browserLink - null null
+2024-09-25 20:05:13.408 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 2.3019ms
+2024-09-25 20:05:13.429 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.7888ms
+2024-09-25 20:05:13.470 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - null null
+2024-09-25 20:05:13.534 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.3176ms
+2024-09-25 20:05:31.601 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:9500/api/Usuarios - application/json 88
+2024-09-25 20:05:31.646 -03:00 [WRN] Failed to determine the https port for redirect.
+2024-09-25 20:05:31.652 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:05:31.668 -03:00 [INF] Route matched with {action = "CadastrarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CadastrarUsuario(ProvaLPI.ViewModel.UsuarioViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 20:05:32.285 -03:00 [ERR] Erro ao verificar email de usuario: andre, andre@gmail.com
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com' at line 2
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at ProvaLPI.Service.UsuarioService.Cadastrar(UsuarioViewModel request) in C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI\Service\UsuarioService.cs:line 77
+2024-09-25 20:05:32.340 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-25 20:05:32.344 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI) in 672.1851ms
+2024-09-25 20:05:32.344 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:05:32.345 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:9500/api/Usuarios - 500 null text/plain; charset=utf-8 743.9008ms
+2024-09-25 20:08:09.973 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 20:08:10.099 -03:00 [INF] Now listening on: http://localhost:9500
+2024-09-25 20:08:10.100 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 20:08:10.100 -03:00 [INF] Hosting environment: Development
+2024-09-25 20:08:10.100 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 20:08:10.759 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/index.html - null null
+2024-09-25 20:08:10.915 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/index.html - 200 null text/html;charset=utf-8 159.1105ms
+2024-09-25 20:08:10.917 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_vs/browserLink - null null
+2024-09-25 20:08:10.917 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 20:08:10.920 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 2.9165ms
+2024-09-25 20:08:10.943 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.3069ms
+2024-09-25 20:08:10.976 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - null null
+2024-09-25 20:08:11.045 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.3713ms
+2024-09-25 20:08:56.806 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:9500/api/Usuarios - application/json 86
+2024-09-25 20:08:56.836 -03:00 [WRN] Failed to determine the https port for redirect.
+2024-09-25 20:08:56.842 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:08:56.852 -03:00 [INF] Route matched with {action = "CadastrarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CadastrarUsuario(ProvaLPI.ViewModel.UsuarioViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 20:08:57.345 -03:00 [INF] Usuário cadastrado com sucesso.
+2024-09-25 20:08:57.347 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-09-25 20:08:57.349 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI) in 494.8571ms
+2024-09-25 20:08:57.349 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:08:57.349 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:9500/api/Usuarios - 200 0 null 543.3607ms
+2024-09-25 20:09:14.458 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:9500/api/Usuarios - application/json 88
+2024-09-25 20:09:14.460 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:09:14.460 -03:00 [INF] Route matched with {action = "CadastrarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CadastrarUsuario(ProvaLPI.ViewModel.UsuarioViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 20:09:14.548 -03:00 [INF] Usuário cadastrado com sucesso.
+2024-09-25 20:09:14.548 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-09-25 20:09:14.548 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI) in 87.9852ms
+2024-09-25 20:09:14.548 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:09:14.549 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:9500/api/Usuarios - 200 0 null 90.277ms
+2024-09-25 20:09:26.977 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:9500/api/Usuarios - application/json 88
+2024-09-25 20:09:26.980 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:09:26.980 -03:00 [INF] Route matched with {action = "CadastrarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CadastrarUsuario(ProvaLPI.ViewModel.UsuarioViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 20:09:26.981 -03:00 [WRN] Senhas não coincidem.
+2024-09-25 20:09:27.027 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-25 20:09:27.028 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI) in 47.9212ms
+2024-09-25 20:09:27.028 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:09:27.028 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:9500/api/Usuarios - 500 null text/plain; charset=utf-8 51.354ms
+2024-09-25 20:09:38.571 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:9500/api/Usuarios - application/json 88
+2024-09-25 20:09:38.575 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:09:38.576 -03:00 [INF] Route matched with {action = "CadastrarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CadastrarUsuario(ProvaLPI.ViewModel.UsuarioViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 20:09:38.636 -03:00 [ERR] Erro ao verificar email de usuario: andre, andre@gmail.com
+System.Exception: Email já cadastrado.
+   at ProvaLPI.Service.UsuarioService.Cadastrar(UsuarioViewModel request) in C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI\Service\UsuarioService.cs:line 83
+2024-09-25 20:09:38.686 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-25 20:09:38.686 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI) in 110.7889ms
+2024-09-25 20:09:38.687 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 20:09:38.687 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:9500/api/Usuarios - 500 null text/plain; charset=utf-8 115.7977ms
+2024-09-25 20:09:47.106 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/index.html - null null
+2024-09-25 20:09:47.111 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/index.html - 200 null text/html;charset=utf-8 4.8214ms
+2024-09-25 20:09:47.117 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 20:09:47.117 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_vs/browserLink - null null
+2024-09-25 20:09:47.117 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 0.4086ms
+2024-09-25 20:09:47.130 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.4156ms
+2024-09-25 20:09:47.208 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - null null
+2024-09-25 20:09:47.214 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.8677ms
+2024-09-25 20:20:22.683 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 20:20:22.835 -03:00 [INF] Now listening on: http://localhost:9500
+2024-09-25 20:20:22.836 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 20:20:22.836 -03:00 [INF] Hosting environment: Development
+2024-09-25 20:20:22.836 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 20:20:23.185 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/index.html - null null
+2024-09-25 20:20:23.350 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/index.html - 200 null text/html;charset=utf-8 172.3786ms
+2024-09-25 20:20:23.356 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 20:20:23.357 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_vs/browserLink - null null
+2024-09-25 20:20:23.358 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 1.8163ms
+2024-09-25 20:20:23.385 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.0438ms
+2024-09-25 20:20:23.420 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - null null
+2024-09-25 20:20:23.436 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Usuarios" for actions - ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI),ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 20:20:23.459 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 39.1973ms
+2024-09-25 20:22:36.433 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 20:22:36.559 -03:00 [INF] Now listening on: http://localhost:9500
+2024-09-25 20:22:36.560 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 20:22:36.561 -03:00 [INF] Hosting environment: Development
+2024-09-25 20:22:36.561 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 20:22:37.153 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/index.html - null null
+2024-09-25 20:22:37.331 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/index.html - 200 null text/html;charset=utf-8 184.5345ms
+2024-09-25 20:22:37.336 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 20:22:37.337 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/_vs/browserLink - null null
+2024-09-25 20:22:37.339 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 4.61ms
+2024-09-25 20:22:37.368 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.5604ms
+2024-09-25 20:22:37.412 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - null null
+2024-09-25 20:22:37.429 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Usuarios" for actions - ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI),ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 20:22:37.453 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:9500/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 42.5381ms
+2024-09-25 20:23:50.408 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 20:23:50.535 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 20:23:50.537 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 20:23:50.537 -03:00 [INF] Hosting environment: Development
+2024-09-25 20:23:50.537 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 20:23:50.796 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 20:23:50.970 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 179.6653ms
+2024-09-25 20:23:50.971 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger-ui-bundle.js - null null
+2024-09-25 20:23:50.971 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger-ui.css - null null
+2024-09-25 20:23:50.972 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger-ui-standalone-preset.js - null null
+2024-09-25 20:23:50.972 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 20:23:50.978 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 5.7129ms
+2024-09-25 20:23:51.013 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-25 20:23:51.013 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-09-25 20:23:51.013 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-09-25 20:23:51.014 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger-ui.css - 200 143943 text/css 42.4689ms
+2024-09-25 20:23:51.014 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger-ui-bundle.js - 200 1096145 text/javascript 42.962ms
+2024-09-25 20:23:51.014 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger-ui-standalone-preset.js - 200 339486 text/javascript 41.4872ms
+2024-09-25 20:23:51.014 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 20:23:51.032 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.9004ms
+2024-09-25 20:23:51.116 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 20:23:51.132 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/favicon-32x32.png - null null
+2024-09-25 20:23:51.133 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-09-25 20:23:51.133 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/favicon-32x32.png - 200 628 image/png 1.1567ms
+2024-09-25 20:23:51.137 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Usuarios" for actions - ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI),ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 20:23:51.185 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 68.8694ms
+2024-09-25 20:26:46.333 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 20:26:46.473 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 20:26:46.474 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 20:26:46.474 -03:00 [INF] Hosting environment: Development
+2024-09-25 20:26:46.474 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 20:26:46.826 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 20:26:47.013 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 189.5816ms
+2024-09-25 20:26:47.015 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 20:26:47.015 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 20:26:47.018 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 2.7508ms
+2024-09-25 20:26:47.040 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.6527ms
+2024-09-25 20:26:47.149 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 20:26:47.168 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Usuarios" for actions - ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI),ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 20:26:47.192 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 43.3079ms
+2024-09-25 21:25:12.655 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:25:12.796 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:25:12.797 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:25:12.797 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:25:12.797 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:25:12.983 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:25:13.073 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+ProvaLPI.Controller.PerfisController.ListarPerfis (ProvaLPI)
+ProvaLPI.Controller.PerfisController.AdicionarPerfil (ProvaLPI)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 21:25:13.112 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 500 null text/html; charset=utf-8 133.5551ms
+2024-09-25 21:25:13.118 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:25:13.118 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:25:13.120 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 1.9181ms
+2024-09-25 21:25:13.140 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.9486ms
+2024-09-25 21:25:13.170 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/favicon.ico - null null
+2024-09-25 21:25:13.170 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+ProvaLPI.Controller.PerfisController.ListarPerfis (ProvaLPI)
+ProvaLPI.Controller.PerfisController.AdicionarPerfil (ProvaLPI)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 21:25:13.172 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/favicon.ico - 500 null text/plain; charset=utf-8 2.2322ms
+2024-09-25 21:25:59.485 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:25:59.616 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:25:59.617 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:25:59.617 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:25:59.617 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:25:59.887 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:26:00.073 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 189.2362ms
+2024-09-25 21:26:00.074 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:26:00.074 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:26:00.076 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 1.6879ms
+2024-09-25 21:26:00.100 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.3398ms
+2024-09-25 21:26:00.136 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:26:00.197 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Usuarios" for actions - ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI),ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 21:26:00.217 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 81.4667ms
+2024-09-25 21:27:13.404 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:27:13.541 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:27:13.542 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:27:13.542 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:27:13.542 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:27:14.069 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:27:14.255 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 188.9145ms
+2024-09-25 21:27:14.258 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:27:14.259 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:27:14.260 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 2.4208ms
+2024-09-25 21:27:14.284 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.639ms
+2024-09-25 21:27:14.320 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:27:14.382 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Usuarios" for actions - ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI),ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 21:27:14.403 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 83.4588ms
+2024-09-25 21:29:10.868 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:29:10.992 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:29:10.994 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:29:10.994 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:29:10.994 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:29:11.507 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:29:11.720 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 219.0588ms
+2024-09-25 21:29:11.730 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:29:11.730 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:29:11.732 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 3.4197ms
+2024-09-25 21:29:11.762 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.5241ms
+2024-09-25 21:29:11.806 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:29:11.887 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Usuarios" for actions - ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI),ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 21:29:11.912 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 106.083ms
+2024-09-25 21:29:48.663 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:29:48.832 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:29:48.833 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:29:48.833 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:29:48.833 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:29:49.236 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:29:49.428 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 193.8548ms
+2024-09-25 21:29:49.430 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:29:49.431 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:29:49.432 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 2.4741ms
+2024-09-25 21:29:49.456 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.4336ms
+2024-09-25 21:29:49.490 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:29:49.572 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.873ms
+2024-09-25 21:32:43.155 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:32:43.282 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:32:43.283 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:32:43.283 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:32:43.283 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:32:43.864 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:32:44.039 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 177.4348ms
+2024-09-25 21:32:44.041 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:32:44.042 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:32:44.043 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 1.8545ms
+2024-09-25 21:32:44.063 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.3733ms
+2024-09-25 21:32:44.103 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:32:44.170 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Usuarios" for actions - ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI),ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 21:32:44.191 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 88.2159ms
+2024-09-25 21:34:48.803 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:34:48.947 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:34:48.948 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:34:48.948 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:34:48.948 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:34:49.061 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:34:49.242 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 183.3866ms
+2024-09-25 21:34:49.243 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:34:49.243 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:34:49.245 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 2.0178ms
+2024-09-25 21:34:49.269 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.7521ms
+2024-09-25 21:34:49.305 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:34:49.364 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Usuarios" for actions - ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI),ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 21:34:49.383 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 78.9194ms
+2024-09-25 21:36:55.985 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:36:56.126 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:36:56.127 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:36:56.127 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:36:56.127 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:36:56.314 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:36:56.494 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 182.3917ms
+2024-09-25 21:36:56.495 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:36:56.495 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:36:56.497 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 2.1415ms
+2024-09-25 21:36:56.514 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.9491ms
+2024-09-25 21:36:56.558 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:36:56.631 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.8761ms
+2024-09-25 21:37:03.400 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:37:03.527 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:37:03.528 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:37:03.529 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:37:03.529 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:37:03.931 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:37:04.114 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 185.7672ms
+2024-09-25 21:37:04.116 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:37:04.116 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:37:04.118 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 2.1115ms
+2024-09-25 21:37:04.145 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.4588ms
+2024-09-25 21:37:04.180 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:37:04.244 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Usuarios" for actions - ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI),ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-25 21:37:04.266 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 86.0598ms
+2024-09-25 21:38:27.234 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:38:27.371 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:38:27.372 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:38:27.372 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:38:27.372 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:38:27.676 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:38:27.854 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 180.354ms
+2024-09-25 21:38:27.857 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:38:27.857 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:38:27.859 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 2.1597ms
+2024-09-25 21:38:27.880 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.9655ms
+2024-09-25 21:38:27.915 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:38:27.997 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.1449ms
+2024-09-25 21:38:46.187 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7850/api/Usuarios - application/json 90
+2024-09-25 21:38:46.192 -03:00 [WRN] Failed to determine the https port for redirect.
+2024-09-25 21:38:46.196 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 21:38:46.214 -03:00 [INF] Route matched with {action = "CadastrarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CadastrarUsuario(ProvaLPI.ViewModel.UsuarioViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 21:38:46.854 -03:00 [INF] Usuário cadastrado com sucesso.
+2024-09-25 21:38:46.856 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-09-25 21:38:46.858 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI) in 641.2089ms
+2024-09-25 21:38:46.858 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 21:38:46.858 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7850/api/Usuarios - 200 0 null 671.5294ms
+2024-09-25 21:39:03.407 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:39:03.580 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:39:03.581 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:39:03.581 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:39:03.581 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:39:03.862 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:39:04.042 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 183.5916ms
+2024-09-25 21:39:04.045 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:39:04.045 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:39:04.047 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 1.7808ms
+2024-09-25 21:39:04.069 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.2757ms
+2024-09-25 21:39:04.107 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:39:04.185 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.4449ms
+2024-09-25 21:39:20.800 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7850/api/Usuarios - application/json 94
+2024-09-25 21:39:20.805 -03:00 [WRN] Failed to determine the https port for redirect.
+2024-09-25 21:39:20.809 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 21:39:20.827 -03:00 [INF] Route matched with {action = "CadastrarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CadastrarUsuario(ProvaLPI.ViewModel.UsuarioViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 21:39:21.369 -03:00 [INF] Usuário cadastrado com sucesso.
+2024-09-25 21:39:21.374 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-09-25 21:39:21.377 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI) in 546.8474ms
+2024-09-25 21:39:21.377 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.CadastrarUsuario (ProvaLPI)'
+2024-09-25 21:39:21.377 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7850/api/Usuarios - 200 null text/plain; charset=utf-8 576.9601ms
+2024-09-25 21:39:31.330 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7850/validar - application/json 43
+2024-09-25 21:39:31.332 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI)'
+2024-09-25 21:39:31.336 -03:00 [INF] Route matched with {action = "ValidarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult ValidarUsuario(ProvaLPI.ViewModel.UsuarioValidarViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 21:39:31.409 -03:00 [WRN] Tentativa de login falhou para o e-mail: vinicius
+2024-09-25 21:39:31.434 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-25 21:39:31.434 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI) in 97.9139ms
+2024-09-25 21:39:31.434 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI)'
+2024-09-25 21:39:31.434 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7850/validar - 500 null text/plain; charset=utf-8 104.3214ms
+2024-09-25 21:39:41.392 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7850/validar - application/json 53
+2024-09-25 21:39:41.393 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI)'
+2024-09-25 21:39:41.393 -03:00 [INF] Route matched with {action = "ValidarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult ValidarUsuario(ProvaLPI.ViewModel.UsuarioValidarViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 21:39:41.457 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-25 21:39:41.459 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI) in 65.3022ms
+2024-09-25 21:39:41.459 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI)'
+2024-09-25 21:39:41.459 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7850/validar - 200 null application/json; charset=utf-8 67.5887ms
+2024-09-25 21:40:00.536 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/api/Categorias/T - null null
+2024-09-25 21:40:00.566 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.CategoriasController.ObterCategorias (ProvaLPI)'
+2024-09-25 21:40:00.568 -03:00 [INF] Route matched with {action = "ObterCategorias", controller = "Categorias"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ObterCategorias(System.String) on controller ProvaLPI.Controller.CategoriasController (ProvaLPI).
+2024-09-25 21:40:00.617 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProvaLPI.Domain.Categoria, ProvaLPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-25 21:40:00.618 -03:00 [INF] Executed action ProvaLPI.Controller.CategoriasController.ObterCategorias (ProvaLPI) in 50.6212ms
+2024-09-25 21:40:00.619 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.CategoriasController.ObterCategorias (ProvaLPI)'
+2024-09-25 21:40:00.619 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/api/Categorias/T - 200 null application/json; charset=utf-8 83.0155ms
+2024-09-25 21:42:39.197 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:42:39.328 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:42:39.330 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:42:39.330 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:42:39.330 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:42:39.983 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:42:40.161 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 181.6924ms
+2024-09-25 21:42:40.164 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:42:40.165 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:42:40.169 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 3.802ms
+2024-09-25 21:42:40.186 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.8801ms
+2024-09-25 21:42:40.226 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:42:40.308 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.3736ms
+2024-09-25 21:43:18.737 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:43:18.867 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:43:18.868 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:43:18.868 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:43:18.869 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:43:19.053 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:43:19.236 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 186.3013ms
+2024-09-25 21:43:19.238 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:43:19.238 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:43:19.240 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 1.7501ms
+2024-09-25 21:43:19.259 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.1143ms
+2024-09-25 21:43:19.300 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:43:19.383 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.6425ms
+2024-09-25 21:43:34.119 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:43:34.258 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:43:34.258 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:43:34.259 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:43:34.259 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:43:34.868 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:43:35.041 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 175.5135ms
+2024-09-25 21:43:35.043 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:43:35.043 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:43:35.046 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 4.022ms
+2024-09-25 21:43:35.068 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.4426ms
+2024-09-25 21:43:35.104 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:43:35.184 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.5937ms
+2024-09-25 21:44:14.953 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:44:15.088 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:44:15.090 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:44:15.090 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:44:15.090 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:44:15.472 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:44:15.654 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 183.2944ms
+2024-09-25 21:44:15.656 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:44:15.656 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:44:15.661 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 3.0732ms
+2024-09-25 21:44:15.682 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.5066ms
+2024-09-25 21:44:15.719 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:44:15.796 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.4115ms
+2024-09-25 21:44:46.613 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:44:46.741 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:44:46.742 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:44:46.742 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:44:46.742 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:44:47.285 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:44:47.468 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:44:47.468 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 185.8269ms
+2024-09-25 21:44:47.470 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:44:47.470 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 8.2074ms
+2024-09-25 21:44:47.490 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.3383ms
+2024-09-25 21:44:47.524 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:44:47.603 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.6459ms
+2024-09-25 21:44:56.619 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:44:56.752 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:44:56.753 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:44:56.753 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:44:56.753 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:44:56.898 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:44:57.083 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 189.3928ms
+2024-09-25 21:44:57.086 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:44:57.086 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:44:57.089 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 4.077ms
+2024-09-25 21:44:57.108 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.553ms
+2024-09-25 21:44:57.145 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:44:57.235 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.7778ms
+2024-09-25 21:47:42.984 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:47:43.137 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:47:43.138 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:47:43.138 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:47:43.138 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:47:43.457 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:47:43.672 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 217.9675ms
+2024-09-25 21:47:43.674 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:47:43.675 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:47:43.684 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 9.1634ms
+2024-09-25 21:47:43.704 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.5701ms
+2024-09-25 21:47:43.740 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:47:43.824 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.7998ms
+2024-09-25 21:48:49.226 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:48:49.370 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:48:49.371 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:48:49.371 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:48:49.371 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:48:49.658 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:48:49.847 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 189.6693ms
+2024-09-25 21:48:49.848 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:48:49.849 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:48:49.850 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 1.5177ms
+2024-09-25 21:48:49.872 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.4385ms
+2024-09-25 21:48:49.911 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:48:49.987 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.4684ms
+2024-09-25 21:48:55.145 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/api/Categorias - null null
+2024-09-25 21:48:55.149 -03:00 [WRN] Failed to determine the https port for redirect.
+2024-09-25 21:48:55.152 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-09-25 21:48:55.154 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-09-25 21:48:55.154 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/api/Categorias - 401 0 null 8.4937ms
+2024-09-25 21:49:03.776 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7850/validar - application/json 44
+2024-09-25 21:49:03.782 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI)'
+2024-09-25 21:49:03.802 -03:00 [INF] Route matched with {action = "ValidarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult ValidarUsuario(ProvaLPI.ViewModel.UsuarioValidarViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 21:49:04.346 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-25 21:49:04.353 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI) in 548.2341ms
+2024-09-25 21:49:04.353 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI)'
+2024-09-25 21:49:04.353 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7850/validar - 200 null application/json; charset=utf-8 578.0711ms
+2024-09-25 21:49:13.575 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/api/Categorias - null null
+2024-09-25 21:49:13.625 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.CategoriasController.ObterCategorias (ProvaLPI)'
+2024-09-25 21:49:13.628 -03:00 [INF] Route matched with {action = "ObterCategorias", controller = "Categorias"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ObterCategorias(System.String) on controller ProvaLPI.Controller.CategoriasController (ProvaLPI).
+2024-09-25 21:49:13.672 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProvaLPI.Domain.Categoria, ProvaLPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-25 21:49:13.674 -03:00 [INF] Executed action ProvaLPI.Controller.CategoriasController.ObterCategorias (ProvaLPI) in 46.0831ms
+2024-09-25 21:49:13.674 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.CategoriasController.ObterCategorias (ProvaLPI)'
+2024-09-25 21:49:13.675 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/api/Categorias - 200 null application/json; charset=utf-8 100.2836ms
+2024-09-25 21:49:44.648 -03:00 [INF] User profile is available. Using 'C:\Users\Aluno\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-25 21:49:44.774 -03:00 [INF] Now listening on: http://localhost:7850
+2024-09-25 21:49:44.776 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-25 21:49:44.776 -03:00 [INF] Hosting environment: Development
+2024-09-25 21:49:44.776 -03:00 [INF] Content root path: C:\Users\Aluno\source\repos\ProvaLPI\ProvaLPI
+2024-09-25 21:49:45.026 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/index.html - null null
+2024-09-25 21:49:45.204 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/index.html - 200 null text/html;charset=utf-8 179.9042ms
+2024-09-25 21:49:45.205 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-25 21:49:45.206 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/_vs/browserLink - null null
+2024-09-25 21:49:45.207 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 2.478ms
+2024-09-25 21:49:45.236 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.7111ms
+2024-09-25 21:49:45.269 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - null null
+2024-09-25 21:49:45.352 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.211ms
+2024-09-25 21:49:48.430 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7850/validar - application/json 44
+2024-09-25 21:49:48.433 -03:00 [WRN] Failed to determine the https port for redirect.
+2024-09-25 21:49:48.436 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI)'
+2024-09-25 21:49:48.448 -03:00 [INF] Route matched with {action = "ValidarUsuario", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult ValidarUsuario(ProvaLPI.ViewModel.UsuarioValidarViewModel) on controller ProvaLPI.Controller.UsuariosController (ProvaLPI).
+2024-09-25 21:49:48.913 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-25 21:49:48.916 -03:00 [INF] Executed action ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI) in 466.8777ms
+2024-09-25 21:49:48.917 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.UsuariosController.ValidarUsuario (ProvaLPI)'
+2024-09-25 21:49:48.917 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7850/validar - 200 null application/json; charset=utf-8 486.8408ms
+2024-09-25 21:50:14.421 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7850/1 - application/json 40
+2024-09-25 21:50:14.431 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.ValidateAndGetOutputSize(String inputString, Int32 offset, Int32 length)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.Decode[T](String input, Int32 offset, Int32 length, Func`3 action)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(String rawString, Int32 startIndex, Int32 length, Func`3 action)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2024-09-25 21:50:14.452 -03:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2024-09-25 21:50:14.453 -03:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2024-09-25 21:50:14.455 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-09-25 21:50:14.457 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-09-25 21:50:14.457 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7850/1 - 401 0 null 36.3282ms
+2024-09-25 21:50:33.391 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7850/1 - application/json 40
+2024-09-25 21:50:33.410 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.PerfisController.AdicionarPerfil (ProvaLPI)'
+2024-09-25 21:50:33.412 -03:00 [INF] Route matched with {action = "AdicionarPerfil", controller = "Perfis"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AdicionarPerfil(Int32, ProvaLPI.ViewModel.PerfilViewModel) on controller ProvaLPI.Controller.PerfisController (ProvaLPI).
+2024-09-25 21:50:33.715 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-09-25 21:50:33.715 -03:00 [INF] Executed action ProvaLPI.Controller.PerfisController.AdicionarPerfil (ProvaLPI) in 303.0069ms
+2024-09-25 21:50:33.715 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.PerfisController.AdicionarPerfil (ProvaLPI)'
+2024-09-25 21:50:33.715 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7850/1 - 200 null text/plain; charset=utf-8 324.9316ms
+2024-09-25 21:50:47.778 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7850/1 - null null
+2024-09-25 21:50:47.779 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.PerfisController.ListarPerfis (ProvaLPI)'
+2024-09-25 21:50:47.780 -03:00 [INF] Route matched with {action = "ListarPerfis", controller = "Perfis"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult ListarPerfis(Int32) on controller ProvaLPI.Controller.PerfisController (ProvaLPI).
+2024-09-25 21:50:47.826 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProvaLPI.Domain.Perfil, ProvaLPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-25 21:50:47.828 -03:00 [INF] Executed action ProvaLPI.Controller.PerfisController.ListarPerfis (ProvaLPI) in 47.8946ms
+2024-09-25 21:50:47.828 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.PerfisController.ListarPerfis (ProvaLPI)'
+2024-09-25 21:50:47.828 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7850/1 - 200 null application/json; charset=utf-8 50.6518ms
+2024-09-25 21:51:04.377 -03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:7850/1/1 - application/json 28
+2024-09-25 21:51:04.379 -03:00 [INF] Executing endpoint 'ProvaLPI.Controller.PerfisController.AtualizarPerfil (ProvaLPI)'
+2024-09-25 21:51:04.380 -03:00 [INF] Route matched with {action = "AtualizarPerfil", controller = "Perfis"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AtualizarPerfil(Int32, Int32, ProvaLPI.ViewModel.PerfilAlterarViewModel) on controller ProvaLPI.Controller.PerfisController (ProvaLPI).
+2024-09-25 21:51:04.441 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-09-25 21:51:04.441 -03:00 [INF] Executed action ProvaLPI.Controller.PerfisController.AtualizarPerfil (ProvaLPI) in 61.6885ms
+2024-09-25 21:51:04.442 -03:00 [INF] Executed endpoint 'ProvaLPI.Controller.PerfisController.AtualizarPerfil (ProvaLPI)'
+2024-09-25 21:51:04.442 -03:00 [INF] Request finished HTTP/1.1 PATCH http://localhost:7850/1/1 - 200 null text/plain; charset=utf-8 64.6096ms

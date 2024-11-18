@@ -1,0 +1,6 @@
+@ProvaLPI_HostAddress = http://localhost:5294
+
+GET {{ProvaLPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

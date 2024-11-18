@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProvaLPI</name>
+    </assembly>
+    <members>
+        <member name="T:ProvaLPI.Controller.CategoriasController">
+            <summary>
+            •    Este Controller gerencia as categorias.
+            </summary>
+        </member>
+        <member name="M:ProvaLPI.Controller.CategoriasController.ObterCategorias(System.String)">
+             <summary>
+            •	Este endpoint tem como objetivo retornar as categorias dos conteúdos disponíveis.
+            •	As categorias podem ser filtradas pelo parâmetro query, se fornecido.
+            •	A resposta deve incluir todas as categorias encontradas.
+             </summary>
+             <returns>
+             •	Retorna 200, 400 ou 404.
+             </returns>
+        </member>
+        <member name="T:ProvaLPI.Controller.PerfisController">
+            <summary>
+            •    Este Controller gerencia os perfis.
+            </summary>
+        </member>
+        <member name="M:ProvaLPI.Controller.PerfisController.ListarPerfis(System.Int32)">
+             <summary>
+            •	O objetivo deste endpoint é retornar todos os perfis associados ao usuário.
+            •	Cada perfil possui um nome e um tipo(normal ou infantil). O Tipo deverá ser um ENUM.
+            •	A resposta deve incluir todos os perfis vinculados ao usuário.
+             </summary>
+             <returns>
+             •	Retorna 200, 400 ou 404.
+             </returns>
+        </member>
+        <member name="M:ProvaLPI.Controller.PerfisController.AdicionarPerfil(System.Int32,ProvaLPI.ViewModel.PerfilViewModel)">
+             <summary>
+            •	No corpo da requisição, devem ser enviados o nome do perfil e seu tipo (normal ou infantil).
+            •	Caso já exista um perfil com o mesmo nome, a requisição deverá ser rejeitada com uma mensagem informando o motivo da recusa.
+            •	Outra regra é o limite de 4 perfis por usuário.Caso o perfil ultrapassar o limite a requisição deve ser rejeitada com uma mensagem informando o motivo da recusa.
+             </summary>
+             <returns>
+             •	Retorna 200, 400 ou 404.
+             </returns>
+        </member>
+        <member name="M:ProvaLPI.Controller.PerfisController.AtualizarPerfil(System.Int32,System.Int32,ProvaLPI.ViewModel.PerfilAlterarViewModel)">
+             <summary>
+            •	Este endpoint é utilizado para atualizar apenas o nome de um perfil.
+            •	O corpo da requisição deve incluir o novo nome do perfil.
+            •	Caso já exista outro perfil com o mesmo nome(exceto o perfil sendo alterado), a requisição deve ser rejeitada, retornando uma mensagem informando o motivo da recusa.
+             </summary>
+             <returns>
+             •	Retorna 200, 400 ou 404.
+             </returns>
+        </member>
+        <member name="T:ProvaLPI.Controller.UsuariosController">
+            <summary>
+            •    Este Controller gerencia os usuários.
+            </summary>
+        </member>
+        <member name="M:ProvaLPI.Controller.UsuariosController.CadastrarUsuario(ProvaLPI.ViewModel.UsuarioViewModel)">
+             <summary>
+            •	Este endpoint tem como objetivo cadastrar um novo usuário.
+            •	No corpo da requisição, é necessário fornecer o nome, senha, confirmação de senha e e-mail.
+            •	A senha e a confirmação de senha devem coincidir; caso contrário, a requisição deverá ser rejeitada com uma mensagem explicativa.
+            •	Se o e-mail já estiver registrado, a requisição também deve ser rejeitada, retornando uma mensagem informando o motivo.
+            •	Se todos os dados estiverem corretos, o usuário deve ser salvo e seu ID retornado na resposta.
+             </summary>
+             <returns>
+             •	Retorna 200, 400 ou 404.
+             </returns>
+        </member>
+        <member name="M:ProvaLPI.Controller.UsuariosController.ValidarUsuario(ProvaLPI.ViewModel.UsuarioValidarViewModel)">
+             <summary>
+            •	Este endpoint tem como objetivo validar um usuário com base no e-mail e senha fornecidos.
+            •	O corpo da requisição, é necessário fornecer conter o e-mail e a senha do usuário.
+            •	Se o corpo da requisição estiver vazio, a requisição deve ser rejeitada com uma mensagem apropriada.
+            •	Caso as credenciais(e-mail + senha) não correspondam a um usuário existente, rejeite a requisição e retorne uma mensagem explicando o erro.
+            •	Se o usuário for validado corretamente, gere um token JWT que deverá ser utilizado para autenticação em requisições autenticadas.
+            •	O E-mail e  Id do usuário deverá estar dentro do token.
+             </summary>
+             <returns>
+             •	Retorna 200, 400 ou 404.
+             </returns>
+        </member>
+    </members>
+</doc>
